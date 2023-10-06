@@ -28,8 +28,8 @@ shopping kart | online shopping
       <h4 class="txt-success me-5">{{products | upper}}</h4>
       <p style="color: rgb(73, 3, 129); font-weight: 800;">{{products.vendor}}</p>
       <p>{{products.descreption}}</p>
-      <h6 class="my-2">Current price : Rs. <s>{{products.original_price | stringformat:'d'}}/-</s></h6>
-      <h6 class="my-2">Offer price: Rs. {{products.selling_price | stringformat:'d'}}/-</h6>
+      <h6 class="my-2 text-danger">Current price : Rs. <s>{{products.original_price | stringformat:'d'}}/-</s></h6>
+      <h6 class="my-2 text-primary">Offer price: Rs. {{products.selling_price | stringformat:'d'}}/-</h6>
       <div class="my-3">
         {% if products.quantity > 0%}
         <input type="hidden" value="{{products.id}}" id="pid">
